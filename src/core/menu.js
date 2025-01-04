@@ -1,6 +1,7 @@
 import { ccoLogo } from './logo';
 
 export function initMenu() {
+  console.log('Creating menu HTML');
   const menuHTML = `
     ${ccoLogo}
     <div id="menu-container">
@@ -229,6 +230,7 @@ export function initMenu() {
 
   // Initialize menu functionality
   document.addEventListener('DOMContentLoaded', () => {
+    console.log('Inserting menu into document');
     document.body.insertAdjacentHTML('beforeend', menuHTML);
     document.head.appendChild(style);
 
