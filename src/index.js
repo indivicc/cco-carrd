@@ -1,8 +1,7 @@
-// Import menu functionality
 import { initMenu } from './core/menu';
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Starting menu initialization');
+// Wait for everything to be ready
+window.addEventListener('load', () => {
+  console.log('Window loaded, initializing menu');
   initMenu();
-  console.log('Menu initialization completed');
 });
